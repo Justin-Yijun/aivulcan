@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>AI 前沿日报</title>
+<link>https://ai-daily-digest.pages.dev/</link>
+<description>每天自动采集 GitHub / YouTube / 博客 / 论文 / Hacker News 上关于 AI、LLM、Agent、Harness 的前沿动态，生成中文摘要。</description>
+<language>zh-cn</language>
+<lastBuildDate>Mon, 05 Oct 2026 12:48:56 +0000</lastBuildDate>
+<atom:link href="https://ai-daily-digest.pages.dev/feed.xml" rel="self" type="application/rss+xml"/>
+<item><title>2026-10-05 AI 前沿日报</title><link>https://ai-daily-digest.pages.dev/d/2026-10-05.html</link><guid isPermaLink="true">https://ai-daily-digest.pages.dev/d/2026-10-05.html</guid><pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate><description><![CDATA[<p>2026-10-05 精选：</p><ul><li><a href="https://claude.dev/blog/getting-the-most-out-of-opus-5-5/">Getting the most out of Opus 5.5 in Claude and Claude Code</a> — 介绍如何在 Claude 及 Claude Code 中充分利用 Opus 5.5 模型。</li><li><a href="https://github.com/Louis-CFM/coucou">Louis-CFM/coucou</a> — 一个小工具居住在系统栏，实时监控 Claude Code 等编码代理的状态。</li><li><a href="https://github.com/rehan-remade/universal-modder">rehan-remade/universal-modder</a> — 使 Claude Code 能够通过技能、工具和 fal MCP 对任意 PC 游戏进行逆向、生成资产和测试。</li><li><a href="https://github.com/yetone/magpie">yetone/magpie</a> — 菜单栏工具统一管理多种代理模型，如 Codex 在 DeepSeek、Claude Code 在 Kimi 上运行。</li><li><a href="https://github.com/youngyangyang04/llm-master">youngyangyang04/llm-master</a> — 提供覆盖 Prompt Engineering 到模型部署等全栈 LLM 学习路线的中文教程。</li><li><a href="https://github.com/Niko1221/Strata">Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s</a> — 在消费级 RTX 4090 上运行 125B 参数的 Qwen 3.8 Flash Next，达到 100T/s 推理速度。</li></ul><p><a href="https://ai-daily-digest.pages.dev/d/2026-10-05.html">阅读完整日报</a></p>]]></description></item>
+</channel>
+</rss>

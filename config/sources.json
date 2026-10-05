@@ -1,0 +1,161 @@
+{
+  "_comment": "AI 前沿日报数据源配置。想增删源改这里即可，不用动代码。",
+
+  "github": {
+    "enabled": true,
+    "per_page": 8,
+    "created_within_days": 45,
+    "pushed_within_days": 7,
+    "_comment": "只找最近新建且涨星快的仓库（=前沿），不找老牌名仓。min_stars 可在每条查询里单独覆盖。",
+    "queries": [
+      { "q": "topic:llm",                    "min_stars": 30 },
+      { "q": "topic:ai-agents",              "min_stars": 30 },
+      { "q": "topic:agent",                  "min_stars": 50 },
+      { "q": "topic:mcp",                    "min_stars": 30 },
+      { "q": "topic:rag",                    "min_stars": 30 },
+      { "q": "topic:llmops",                 "min_stars": 20 },
+      { "q": "topic:generative-ai",          "min_stars": 50 },
+      { "q": "\"agent harness\" in:name,description,readme",       "min_stars": 10, "created_within_days": 90 },
+      { "q": "\"coding agent\" in:name,description,readme",        "min_stars": 30 },
+      { "q": "\"context engineering\" in:name,description,readme",  "min_stars": 10, "created_within_days": 90 },
+      { "q": "\"tool calling\" in:name,description,readme",         "min_stars": 10, "created_within_days": 90 }
+    ]
+  },
+
+  "youtube": {
+    "enabled": true,
+    "per_channel": 4,
+    "max_age_days": 14,
+    "channels": [
+      { "name": "OpenAI",            "handle": "@OpenAI",              "id": "UCXZCJLdBC09xxGZ6gcdrc6A" },
+      { "name": "Anthropic",         "handle": "@Anthropic",           "id": "UCOIji0UklfggVrY7Ym-IfDQ" },
+      { "name": "Google DeepMind",    "handle": "@GoogleDeepMind",      "id": "UCP7jMXSY2xbc3KCAE0MHQ-A" },
+      { "name": "LangChain",         "handle": "@LangChain",           "id": "UCC-lyoTfSrcJzA1ab3APAgw" },
+      { "name": "Andrej Karpathy",   "handle": "@AndrejKarpathy",     "id": "UCXUPKJO5MZQN11PqgIvyuvQ" },
+      { "name": "Two Minute Papers", "handle": "@TwoMinutePapers",     "id": "UCbfYPyITQ-7l4upoX8nvctg" },
+      { "name": "Yannic Kilcher",    "handle": "@YannicKilcher",      "id": "UCZHmQk67mSJgfCCTn7xBfew" },
+      { "name": "ML Street Talk",    "handle": "@MLST",               "id": "UCjw24DO_O3MO5GWFxhc5guw" },
+      { "name": "bycloud",          "handle": "@bycloudAI",           "id": "UCgfe2ooZD3VJPB6aJAnuQng" },
+      { "name": "Matthew Berman",    "handle": "@matthew_berman",     "id": "UCawZsQWqfGSbCI5yjkdVkTA" },
+      { "name": "Sam Witteveen",     "handle": "@samwitteveenai",     "id": "UC55ODQSvARtgSyc8ThfiepQ" },
+      { "name": "Cole Medin",        "handle": "@ColeMedin",          "id": "UCMwVTLZIRRUyyVrkjDpn4pA" },
+      { "name": "IndyDevDan",        "handle": "@indydevdan",         "id": "UC_x36zCEGilGpB1m-V4gmjg" },
+      { "name": "David Ondrej",      "handle": "@DavidOndrej",       "id": "UCPGrgwfbkjTIgPoOh2q1BAg" },
+      { "name": "Wes Roth",         "handle": "@WesRoth",           "id": "UCqcbQf6yw5KzRoDDcZ_wBSw" },
+      { "name": "1littlecoder",     "handle": "@1littlecoder",       "id": "UCpV_X0VrL8-jg3t6wYGS-1g" }
+    ]
+  },
+
+  "feeds": {
+    "enabled": true,
+    "max_age_days": 14,
+    "per_feed": 5,
+    "list": [
+      { "name": "OpenAI 官方博客",        "url": "https://openai.com/news/rss.xml" },
+      { "name": "Google DeepMind 博客",   "url": "https://deepmind.google/blog/rss.xml" },
+      { "name": "Google Research 博客",   "url": "https://research.google/blog/rss/" },
+      { "name": "HuggingFace 博客",       "url": "https://huggingface.co/blog/feed.xml" },
+      { "name": "LangChain 博客",         "url": "https://blog.langchain.com/rss.xml" },
+      { "name": "Simon Willison",         "url": "https://simonwillison.net/atom/everything/" },
+      { "name": "Lilian Weng",           "url": "https://lilianweng.github.io/index.xml", "weight": 1.5, "max_age_days": 150 },
+      { "name": "The Gradient",          "url": "https://thegradient.pub/rss/" },
+      { "name": "Interconnects (Nathan Lambert)", "url": "https://www.interconnects.ai/feed" },
+      { "name": "Import AI (Jack Clark)", "url": "https://importai.substack.com/feed" },
+      { "name": "Latent Space",          "url": "https://www.latent.space/feed" },
+      { "name": "Eugene Yan",            "url": "https://eugeneyan.com/rss/" },
+      { "name": "Chip Huyen",            "url": "https://huyenchip.com/feed.xml" },
+      { "name": "BAIR 伯克利 AI 博客",     "url": "https://bair.berkeley.edu/blog/feed.xml" },
+      { "name": "微软研究院博客",          "url": "https://www.microsoft.com/en-us/research/feed/" },
+      { "name": "NVIDIA 技术博客",         "url": "https://blogs.nvidia.com/feed/" },
+      { "name": "Qwen 官方博客",           "url": "https://qwenlm.github.io/blog/index.xml" },
+      { "name": "MarkTechPost",          "url": "https://www.marktechpost.com/feed/" },
+      { "name": "新智元",                "url": "https://www.aiera.com.cn/feed" },
+      { "name": "雷锋网",                  "url": "https://www.leiphone.com/feed" },
+      { "name": "量子位",                  "url": "https://www.qbitai.com/feed" },
+      { "name": "InfoQ 中文 AI",           "url": "https://www.infoq.cn/feed/ai" }
+    ]
+  },
+
+  "scrape": {
+    "enabled": true,
+    "_comment": "这些官方页没有 RSS，直接抓 HTML。weight 用于给重点页单独加权。",
+    "pages": [
+      { "name": "Anthropic 官方 news",  "url": "https://www.anthropic.com/news",
+        "max_age_days": 21,  "max_items": 8, "weight": 1.0 },
+      { "name": "Anthropic Engineering", "url": "https://www.anthropic.com/engineering",
+        "max_age_days": 400, "max_items": 5, "weight": 1.5 }
+    ]
+  },
+
+  "papers": {
+    "enabled": true,
+    "hf_daily_papers": true,
+    "max_items": 12,
+    "arxiv_rss": [
+      { "name": "arXiv cs.AI", "url": "http://export.arxiv.org/rss/cs.AI", "weight": 1.3 },
+      { "name": "arXiv cs.CL", "url": "http://export.arxiv.org/rss/cs.CL", "weight": 1.3 }
+    ],
+    "arxiv_per_feed": 6
+  },
+
+  "hackernews": {
+    "enabled": true,
+    "min_points": 80,
+    "max_age_days": 2,
+    "max_items": 10,
+    "queries": ["LLM", "AI agent", "agentic", "MCP", "Claude", "GPT", "open source model"]
+  },
+
+  "relevance": {
+    "_comment": "命中任一关键词才算相关；GitHub 因为已经按 topic 搜过，只做弱过滤",
+    "keywords": [
+      "llm", "large language model", "gpt", "claude", "gemini", "llama", "qwen", "deepseek",
+      "agent", "agentic", "multi-agent", "harness", "scaffold", "tool use", "tool calling",
+      "function calling", "mcp", "model context protocol", "rag", "retrieval", "context engineering",
+      "fine-tune", "fine-tuning", "rlhf", "dpo", "reasoning", "chain of thought", "inference",
+      "vllm", "sglang", "quantization", "transformer", "diffusion", "multimodal", "embedding",
+      "vector database", "prompt", "copilot", "coding agent", "claude code", "codex", "cursor",
+      "openai", "anthropic", "deepmind", "hugging face", "benchmark", "eval", "alignment",
+      "智能体", "大模型", "推理", "微调", "提示词", "多模态", "开源模型"
+    ]
+  },
+
+  "scoring": {
+    "_comment": "score = base(按源) × recency × hot_boost。数字越大越靠前。",
+    "source_weight": {
+      "github": 0.9,
+      "hackernews": 1.0,
+      "paper": 0.95,
+      "youtube": 0.9,
+      "blog": 0.85
+    },
+    "hot_keywords": [
+      "agent harness", "harness", "coding agent", "claude code", "codex", "mcp",
+      "tool use", "tool calling", "context engineering", "agentic", "multi-agent",
+      "computer use", "browser use", "sandbox", "eval", "benchmark"
+    ],
+    "hot_boost": 1.35,
+    "interview_keywords": [
+      "system design", "how to build", "from scratch", "internals",
+      "implementation", "deep dive", "design a"
+    ],
+    "interview_boost": 1.5,
+    "recency_factor": { "1": 1.0, "3": 0.95, "7": 0.9, "30": 0.85, "9999": 0.6 }
+  },
+
+  "output": {
+    "max_items": 14,
+    "top_picks": 5,
+    "max_dups": 6,
+    "weekly_top": 12,
+    "source_quota": {
+      "github": 4,
+      "youtube": 3,
+      "blog": 3,
+      "paper": 2,
+      "hackernews": 2
+    },
+    "keep_state_days": 120,
+    "similarity_threshold": 0.6
+  }
+}
